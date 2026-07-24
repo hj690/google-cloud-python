@@ -18,6 +18,23 @@ sources:
   googleapis:
     commit: 99f54e6513f09d8df1707a6c553b0a3c6ef9b5fb
     sha256: 7cee15fe1ae76a16aaf70425c4380a3a0fcbfeb4ea8e30c934c43f5cd54b9657
+tools:
+  pip:
+    - name: gapic-generator
+      version: "1.37.1"
+    - name: nox
+      version: "2025.11.12"
+    - name: ruff
+      version: "0.14.14"
+    - name: isort
+      version: "5.11.0"
+    - name: black
+      version: "23.7.0"
+      package: "black[jupyter]==23.7.0"
+    - name: synthtool
+      version: "e643ce8e20f8fe237a31a1754524ba987de72875"
+      package: "gcp-synthtool@git+https://github.com/googleapis/synthtool@e643ce8e20f8fe237a31a1754524ba987de72875"
+
 default:
   output: packages
   tag_format: '{name}-v{version}'
